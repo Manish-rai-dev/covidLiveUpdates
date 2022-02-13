@@ -1,0 +1,553 @@
+
+*{
+  margin: -8px;
+  padding: 0;
+  font-family: "poppins",sans-serif;
+  box-sizing: border-box;
+
+}
+html, body{
+  margin: -8px;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #E4EFE7;
+}
+.hero{
+  width: 100%;
+  height: 100vh;
+  padding: 0 8%;
+  background-image: url(E:\covidLiveDataReact\coviddata\public\covid-19.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.nav-links
+{
+  padding: 28px 0;
+}
+.nav-links li{
+  display: inline-block;
+  margin: 0 15px;
+}
+.nav-links li a{
+  text-decoration: none;
+  color: aliceblue;
+  padding: 5px 0;
+  position: relative;
+}
+.nav-links li a::after{
+  content: '';
+  background: rgb(219, 91, 59);
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.5s;
+  
+}
+.nav-links li a:hover::after{
+  width: 100%;
+}
+.txte{
+  font-size: 6rem;
+  position: relative;
+  top: 200px;
+  left: 400px;
+}
+
+
+
+
+  .rotate{
+      animation: rotation 2s;
+    }
+
+
+    @keyframes rotation {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(359deg);
+      }
+    }
+
+
+
+    .linear{
+      animation-timing-function: linear;
+    }
+
+
+    .infinite{
+      animation-iteration-count: infinite;
+    }
+
+#title{
+  color:#fff;
+  }
+#features{
+  padding: 7% 15%;
+
+  position: relative;
+  z-index: 1;
+
+}
+#heading{
+  font-family: 'Montserrat-Bold';
+
+  font-size: 3.5rem;
+  line-height: 1.5;
+
+}
+
+.fas
+{
+  text-align: center;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins',sans-serif;
+}
+
+.features
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.568);
+  min-height: 100vh;
+}
+
+.container 
+{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+position: relative;
+left: 100px;
+}
+.container .card
+{
+  position: relative;
+  left: 15%;
+  width: 450px;
+  height: 600px;
+  background: #FFc300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+.container:hover .card
+{
+opacity: 0.2;
+}
+.container .card:hover
+{
+opacity: 1;
+}
+
+.container .card::before
+{
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  width: 50%;
+  background: rgba(255,255,255,0.1);
+  pointer-events: none;
+}
+.container .card .content
+{
+  padding: 30px;
+  text-align: center;
+}
+
+.container .card .content h3
+{
+position: relative;
+font-size: 1.5rem;
+color: #444;
+z-index: 2;
+opacity: 0.5;
+letter-spacing: 1px;
+transition: 0.5s;
+}
+.container .card .content p
+{
+position: relative;
+font-size: 1rem;
+color: #444;
+z-index: 2;
+opacity: 0.5;
+font-weight: 400;
+letter-spacing: 1px;
+transition: 0.5s;
+color: rgba(0, 0, 0, 0.952);
+}
+.container .card:hover .content h3 , .container .card:hover .content p
+{
+opacity: 1;
+}
+
+.container .card .content .btn{
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 15px;
+  background: grey;
+
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.container .card span
+{
+transition: 0.5;
+opacity: 0;
+}
+.container .card:hover span{
+  opacity: 1;
+}
+.container .card span:nth-child(1)
+{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 3px;
+background: linear-gradient(to right, transparent,#FF7600);
+animation: animate1 2s linear infinite;
+
+}
+
+@keyframes animate1
+{
+  0%{
+      transform: translateX(-100%);
+  }
+  100%{
+      transform: translateX(100%);
+  }
+}
+
+.container .card span:nth-child(2)
+{
+position: absolute;
+top: 0;
+right: 0;
+width: 3px;
+height: 100%;
+background: linear-gradient(to bottom, transparent,#CD113B);
+animation: animate2 2s linear infinite;
+animation-delay: 1s;
+
+}
+
+@keyframes animate2
+{
+  0%{
+      transform: translateY(-100%);
+  }
+  100%{
+      transform: translateY(100%);
+  }
+}
+
+.container .card span:nth-child(3)
+{
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 3px;
+background: linear-gradient(to left, transparent,#CD113B);
+animation: animate3 2s linear infinite;
+
+}
+
+@keyframes animate3
+{
+  0%{
+      transform: translateX(100%);
+  }
+  100%{
+      transform: translateX(-100%);
+  }
+}
+
+.container .card span:nth-child(4)
+{
+position: absolute;
+top: 0;
+left: 0;
+width: 3px;
+height: 100%;
+background: linear-gradient(to top, transparent,#CD113B);
+animation: animate4 2s linear infinite;
+animation-delay: 1s;
+}
+
+@keyframes animate4
+{
+  0%{
+      transform: translateY(100%);
+  }
+  100%{
+      transform: translateY(-100%);
+  }
+}
+
+.btn{
+  display: inline-block;
+  margin-top: .6rem;
+  padding-right: 2rem ;
+  padding-left: 2rem;
+  border-radius: 6rem;
+  background:var(--red);
+  color:#fff;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  font-size: 1.7rem;
+}
+
+.btn::before{
+  content:'';
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background:#444;
+  clip-path: polygon(0 0, 100% 0, 0 0, 0% 100%);
+  transition:.3s linear;
+}
+
+.btn:hover::before{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.symptoms{
+  margin:5% 3%;
+}
+
+.conttile{
+  margin: 5% 2%;
+  margin-top:15% ;
+}
+.foot-cont{
+  margin: 3%;
+  text-align: center;
+  padding: 2% ;
+}
+
+
+
+.foot-copy{
+  text-align: center;
+}
+
+
+
+
+.live-data
+{ margin-left: 13%;
+  margin-top: -2.5%;
+  margin-bottom: 0%;
+  text-align: center;
+align-items: center;
+  font-size: 4rem;
+
+
+}
+
+.data{
+  text-align: center;
+  padding-bottom: 7%;
+}
+.symptoms
+{
+  background-color: rgba(0, 0, 0, 0.568);
+  margin:0;
+  padding: 05%;
+  padding-bottom: 0;
+  color: #fff;
+}
+
+.live_stats
+{
+  background-color:#E4EFE7;
+  padding: 7%;
+}
+
+.conttile
+{
+  background-color: #E4EFE7;
+  padding: 7%;
+}
+#footer
+{
+  margin:0;
+  padding: 2%;
+  background-color: #A9F1DF;
+}
+.jija
+{
+  
+  color: white;
+  text-align: center;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+.jija:hover
+{
+  color: #184D47;
+}
+
+@media (max-width: 1080px)
+{
+  .design{
+    text-align: center;
+    font-size: 500;
+    color: burlywood;
+    position: relative;
+    top: 15%;
+    padding: 2%;
+    margin: 2%;
+  }
+
+  .design2{
+    position: relative;
+    top: 5%;
+  }
+ 
+  #title ,#live_stats{
+      text-align: center;
+  }
+  .txte{
+      position: relative;
+      top:200px;
+      left:-40px;
+      font-size: 1.5rem;
+      
+  }
+  .sympimg
+  {
+      height: 300px;
+      width: 300px;
+      text-align: center;
+      margin-left: 13%;
+  }
+  .title-image{
+      height: 300px;
+      width:200px;
+  }
+  .c19
+{
+  height: 40px;
+  width: 40px;
+}
+.container .card
+{
+  position: relative;
+  left:-40px;
+  width: 250px;
+  height: 500px;
+}
+.container
+{
+  position: relative;
+  left:100px;
+}
+.container-flipcard{
+  position: relative;
+  left:50px;
+}
+
+}
+
+.syms{
+  color: #fff;
+  font-size: 4rem;
+  text-align: center;
+  padding-bottom: 7%;
+
+}
+.main-head
+{
+  color:black;
+  font-size: 3rem;
+  font-weight: bold;
+  padding-bottom: 7%;
+  text-align: center;
+}
+.title-image
+{
+height: 500px;
+width: 350px;
+
+}
+.c19
+{
+  height: 100px;
+  width: 100px;
+}
+.live_stats{
+position: relative;
+right: 6%;
+}
+.row123{
+  position: relative;
+right: 23%;
+}
+.shift_right{
+  position: relative;
+  left: 64%;
+}
+a{
+  font-size: 1.2rem;
+}
+
+
+
+
+.design2{
+  position: relative;
+  top: 5%;
+}
+@media (max-width:991px)
+{
+  .shift_right{
+    position: relative;
+    left:0%;
+    
+    align-items: center;
+    text-align: center;
+  }
+  html,body{
+    margin:-8px;
+    overflow-x: hidden;
+  }
+}
+.symptoms_data{
+  margin-left:5% ;
+  text-align: center;
+}

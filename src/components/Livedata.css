@@ -1,0 +1,143 @@
+
+
+.flip-card {
+    background-color: transparent;
+    width: 20vw;
+    height: 35vh;
+    border: #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    top: 20%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+   
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    box-shadow: 4px 8px 8px 4px grey;
+   
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: rgba(25 11 37/ 72%);
+    color:black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: #006666;
+    color: black;
+    transform: rotateY(180deg);
+  }
+  .design{
+      text-align: center;
+      font-size: 500;
+      color: white;
+      position: relative;
+      top: 15%;
+      padding: 2%;
+      margin: 2%;
+    }
+
+  .usadata{
+      margin-top: 4%;
+  }
+  @media (max-width:700px) {
+      
+    .flip-card {
+      background-color: transparent;
+      width: 80vw;
+      height: 50vh;
+      border: #f1f1f1;
+      perspective: 1000px; /* Remove this if you don't want the 3D effect */
+      margin-top: 5%;
+      margin-bottom: 5%;
+      position: relative;
+      right: 6%;
+    }
+    
+    /* This container is needed to position the front and back side */
+    .flip-card-inner {
+      position: relative;
+      top: 20%;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+     
+    }
+    
+    /* Do an horizontal flip when you move the mouse over the flip box container */
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+    
+    /* Position the front and back side */
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden; /* Safari */
+      backface-visibility: hidden;
+     
+    }
+    
+    /* Style the front side (fallback if image is missing) */
+    .flip-card-front {
+      background-color: rgba(25 11 37/ 72%);
+      color:black;
+    }
+    
+    /* Style the back side */
+    .flip-card-back { 
+      background-color: #006666;
+      color: black;
+      transform: rotateY(180deg);
+    }
+    .design{
+        text-align: center;
+        font-size: 500;
+        color: white;
+        position: relative;
+        top: 15%;
+        padding: 2%;
+        margin: 2%;
+      }
+  
+    .usadata{
+        margin-top: 4%;
+    }
+      
+  }
+  .flip-card-back1{
+    background-color: darkolivegreen;
+  }
+  .flip-card-front1{
+    background-color: rgba(223, 202, 14, 0.925);
+  }
+  .flip-card-front2{
+    background-color: #CC6600;
+  }
+.flip-card-back2{
+    background-color: #006666;
+  }
