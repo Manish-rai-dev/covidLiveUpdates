@@ -39,7 +39,7 @@ const Live = () => {
            <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
            <ul className="navbar-nav ml-auto nav-links shift_right">
                <li className="nav-item">
-                   <a className="nav-link" href="/">Home</a>
+                   <a className="nav-link" href="/covidLiveUpdates/">Home</a>
                </li>
                <li className="nav-item">
                  <a className="nav-link" href="/live">LIVE</a></li>
